@@ -1,52 +1,93 @@
-# 🌾 KrushiMitra - Crop Yield Prediction System
+# 🌱 KrushiMitra – AI Crop Yield Prediction System
 
-## Project Overview
+<p align="center">
 
-KrushiMitra is a Machine Learning based web application that predicts crop yield using agricultural data. The project helps farmers and researchers estimate crop production based on various factors such as state, crop type, season, area and production details.
+![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-orange?style=for-the-badge&logo=scikitlearn)
+![Streamlit](https://img.shields.io/badge/Streamlit-Web%20Application-red?style=for-the-badge&logo=streamlit)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-This project was developed as an end-to-end Machine Learning project to understand the complete ML workflow including data preprocessing, exploratory data analysis, model building and deployment.
+</p>
 
 ---
 
-## Features
+## 📖 Project Overview
 
-- Data Cleaning and Preprocessing
+**KrushiMitra** is an AI-powered Crop Yield Prediction System developed using **Machine Learning** and **Streamlit**.
+
+The application predicts crop yield based on agricultural parameters such as:
+
+- 🌍 State
+- 🏙 District
+- 🌾 Crop
+- 🌤 Season
+- 📅 Crop Year
+- 🌱 Area
+
+The project demonstrates a complete end-to-end Machine Learning workflow including:
+
+- Data Cleaning
 - Exploratory Data Analysis (EDA)
-- Data Visualization
-- Multiple Machine Learning Models
-- Model Performance Comparison
-- Crop Yield Prediction
-- Interactive Streamlit Web Application
+- Feature Engineering
+- Model Training
+- Hyperparameter Tuning
+- Model Evaluation
+- Model Deployment using Streamlit
 
 ---
 
-## Tech Stack
+# ✨ Features
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Scikit-Learn
-- Streamlit
-
----
-
-## Machine Learning Models Used
-
-- Linear Regression
-- Decision Tree Regressor
-- Random Forest Regressor
-
-Final selected model: **Random Forest Regressor**
+- 🤖 AI-powered Crop Yield Prediction
+- 📊 Interactive Streamlit Dashboard
+- 🌍 Dynamic State → District Selection
+- 🌾 Crop & Season Selection
+- 📈 Model Performance Dashboard
+- 🧹 Data Cleaning & Preprocessing
+- 📉 Exploratory Data Analysis (EDA)
+- ⚙️ Hyperparameter Tuning
+- 🚀 Production-ready ML Pipeline
+- 🎨 Modern Responsive UI
 
 ---
 
-## Dataset Information
+# 🧠 Machine Learning Workflow
 
-The dataset contains agricultural information from different states and districts of India.
+```
+Raw Dataset
+      │
+      ▼
+Data Cleaning
+      │
+      ▼
+Exploratory Data Analysis
+      │
+      ▼
+Feature Engineering
+      │
+      ▼
+Preprocessing Pipeline
+      │
+      ▼
+Model Training
+      │
+      ▼
+Hyperparameter Tuning
+      │
+      ▼
+Random Forest Regressor
+      │
+      ▼
+Streamlit Deployment
+```
 
-Main features used:
+---
+
+# 📂 Dataset Information
+
+The dataset contains agricultural information collected from different states and districts across India.
+
+### Features
 
 - State
 - District
@@ -54,33 +95,179 @@ Main features used:
 - Crop Year
 - Season
 - Area
-- Production
 
-Target Variable:
+### Target Variable
 
 - Yield
 
 ---
 
-## Project Structure
+# 🤖 Machine Learning Models
+
+The following regression models were trained and evaluated:
+
+- Linear Regression
+- Decision Tree Regressor
+- Random Forest Regressor
+
+### ✅ Final Selected Model
+
+**Random Forest Regressor**
+
+---
+
+# 📊 Model Performance
+
+| Metric | Value |
+|---------|-------|
+| Model | Random Forest Regressor |
+| R² Score | **0.9278** |
+| MAE | **13.676** |
+| RMSE | **248.663** |
+| Training Samples | **276,246** |
+| Testing Samples | **69,062** |
+
+---
+
+# 🛠 Tech Stack
+
+### Programming
+
+- Python
+
+### Data Analysis
+
+- Pandas
+- NumPy
+
+### Visualization
+
+- Matplotlib
+- Seaborn
+
+### Machine Learning
+
+- Scikit-Learn
+- Joblib
+
+### Deployment
+
+- Streamlit
+
+---
+
+# 📁 Project Structure
 
 ```text
-KrushiMitra Crop Yield Prediction/
+KrushiMitra/
+│
+├── app/
+│   └── app.py
+│
+├── backend/
+│   ├── predictor.py
+│   └── __init__.py
 │
 ├── data/
-│   └── crop_yield.csv
+│   ├── Crop_Yield.csv
+│   ├── locations.py
+│   └── __init__.py
+│
+├── models/
+│   ├── model.pkl
+│   └── preprocessor.pkl
 │
 ├── notebooks/
 │   └── Crop_Yield_Prediction_Model.ipynb
 │
-├── models/
-│   └── random_forest_model.pkl
-│
-├── app/
-│   └── streamlit_app.py
-│
 ├── assets/
+│
+├── screenshots/
 │
 ├── requirements.txt
 ├── README.md
 └── .gitignore
+```
+
+---
+
+# 🚀 Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/deepkacha05/KrushiMitra-Crop-Yield-Prediction.git
+```
+
+Move into the project directory
+
+```bash
+cd KrushiMitra-Crop-Yield-Prediction
+```
+
+Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the Streamlit application
+
+```bash
+streamlit run app/app.py
+# 📸 Application Preview
+
+## 🏠 Home Page
+
+![Home Page](screenshots/home.png)
+
+---
+
+## 🌾 Prediction Result
+
+![Prediction Result](screenshots/prediction.png)
+
+---
+
+## 📊 Model Performance Dashboard
+
+![Analytics](screenshots/analytics.png)
+---
+
+# 📈 Future Improvements
+
+- 🌦 Weather API Integration
+- 🌱 Soil Health Analysis
+- 🧪 Fertilizer Recommendation
+- 🌾 Crop Recommendation System
+- 🌐 Multi-language Support
+- ☁ Cloud Deployment
+- 📱 Mobile Responsive Dashboard
+
+---
+
+# 👨‍💻 Author
+
+**Deep Kacha**
+
+Computer Engineering Student
+
+GitHub:
+https://github.com/deepkacha05
+
+Repository:
+https://github.com/deepkacha05/KrushiMitra-Crop-Yield-Prediction
+
+---
+
+# ⭐ Support
+
+If you found this project useful, consider giving it a ⭐ on GitHub.
+
+It helps support the project and motivates future development.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.

@@ -1,0 +1,129 @@
+/* ==========================================
+   KrushiMitra | Dark Glassmorphism Theme
+   ========================================== */
+
+/* Main background gradient */
+.stApp {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #ffffff;
+}
+
+/* Glassmorphism Card Style */
+.glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    margin-bottom: 24px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Typography */
+h1, h2, h3 {
+    color: #ffffff !important;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+.gradient-text {
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem !important;
+    font-weight: 800 !important;
+    margin-bottom: 0px;
+}
+.subtitle {
+    color: #a8b2d1;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+/* Metrics & Badges */
+.metric-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #92FE9D;
+}
+.metric-label {
+    color: #8892b0;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    background: rgba(0, 201, 255, 0.1);
+    color: #00C9FF;
+    border: 1px solid rgba(0, 201, 255, 0.3);
+    margin-bottom: 15px;
+}
+
+/* Result card success badge variant */
+.badge-success {
+    background: rgba(146, 254, 157, 0.1);
+    color: #92FE9D;
+    border-color: #92FE9D;
+}
+
+/* Prediction result value */
+.result-value {
+    font-size: 3.5rem;
+    font-weight: 800;
+    background: linear-gradient(90deg, #92FE9D 0%, #00C9FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Idle result placeholder */
+.idle-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 250px;
+    text-align: center;
+}
+
+/* Streamlit Input Overrides */
+div[data-baseweb="select"] > div, input[type="number"] {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: white !important;
+    border-radius: 8px !important;
+}
+
+/* Button Style */
+.stButton>button {
+    width: 100%;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    color: #0f2027;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    transition: opacity 0.3s;
+}
+.stButton>button:hover {
+    opacity: 0.9;
+    color: #0f2027;
+    border: none;
+}
+
+/* Footer */
+.app-footer {
+    text-align: center;
+    color: #8892b0;
+    font-size: 0.8rem;
+    margin-top: 50px;
+}
