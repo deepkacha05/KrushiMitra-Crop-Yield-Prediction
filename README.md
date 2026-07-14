@@ -216,23 +216,29 @@ Run the Streamlit application
 ```bash
 streamlit run app/app.py
 # 📸 Application Preview
+# 📸 Application Preview
 
 ## 🏠 Home Page
 
-![Home Page](screenshots/home.png)
+<p align="center">
+  <img src="screenshots/home.png" width="900">
+</p>
 
 ---
 
 ## 🌾 Prediction Result
 
-![Prediction Result](screenshots/prediction.png)
+<p align="center">
+  <img src="screenshots/prediction.png" width="900">
+</p>
 
 ---
 
 ## 📊 Model Performance Dashboard
 
-![Analytics](screenshots/analytics.png)
----
+<p align="center">
+  <img src="screenshots/analytics.png" width="900">
+</p>
 
 # 📈 Future Improvements
 
