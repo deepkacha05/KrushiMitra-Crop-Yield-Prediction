@@ -220,25 +220,18 @@ streamlit run app/app.py
 
 ## 🏠 Home Page
 
-<p align="center">
-  <img src="screenshots/home.png" width="900">
-</p>
-
+![Home](https://raw.githubusercontent.com/deepkacha05/KrushiMitra-Crop-Yield-Prediction/main/screenshots/home.png)
 ---
 
 ## 🌾 Prediction Result
 
-<p align="center">
-  <img src="screenshots/prediction.png" width="900">
-</p>
+![Home](https://raw.githubusercontent.com/deepkacha05/KrushiMitra-Crop-Yield-Prediction/main/screenshots/prediction.png)
 
 ---
 
 ## 📊 Model Performance Dashboard
 
-<p align="center">
-  <img src="screenshots/analytics.png" width="900">
-</p>
+![Home](https://raw.githubusercontent.com/deepkacha05/KrushiMitra-Crop-Yield-Prediction/main/screenshots/analytics.png)
 
 # 📈 Future Improvements
 
